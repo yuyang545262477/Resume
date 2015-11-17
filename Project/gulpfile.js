@@ -12,7 +12,15 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     del = require('del'),
     browserSync = require('browser-sync'),
+    htmlmin = require('gulp-htmlmin'),
     reload = browserSync.reload;
+
+
+gulp.task('htmls', function() {
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('dist'))
+});
 
 //编译sass，自动添加前缀
 gulp.task('styles',function(){
@@ -47,7 +55,7 @@ gulp.task('images',function(){
 });
 //清除文件
 gulp.task('clean',function(cb){
-    del(['dist/**/*.css','dist/**/*.js','dist/img'],cb)//cb 确保在退出前完成任务
+    del(['dist/**/*.css','dist/**/*.js','dist/img','dist/*.html'],cb)//cb 确保在退出前完成任务
 });
 //设置服务器
 gulp.task('server',function(){
@@ -56,15 +64,19 @@ gulp.task('server',function(){
             baseDir:'dist'
         }
     });
-    gulp.watch('src/styles/**/*.scss',['style']);
+    //watch .html files
+    gulp.watch('src/*.html', ['htmls']);
+    //watch .css files
+    gulp.watch('src/styles/**/*.scss',['styles']);
     //watch .js files
     gulp.watch('src/scripts/**/*.js',['scripts']);
     //watch .image files
     gulp.watch('src/images/**/*',['images']);
-    gulp.watch(['*.html','transition/**/*.css','transition/**/*.js'],{cwd:'dist'},reload);
+    gulp.watch(['*.html', 'transition/**/*.css', 'transition/**/*.js'],
+     { cwd: 'dist' }, reload);
 });
 
 //设置默认任务
-gulp.task('default',['clean'],function(){//clean任务执行完成之前才会去运行其他的任务
-    gulp.start('styles','scripts','images','server');
+gulp.task('default',function(){//clean任务执行完成之前才会去运行其他的任务
+    gulp.start('htmls','styles','scripts','images','server');
 });
