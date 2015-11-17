@@ -1,0 +1,527 @@
+/*公用的*/
+
+.shopClass>h3,
+dd {
+    margin: 0 0;
+}
+
+.comWidth {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftArea {
+    float: left;
+}
+
+.rightArea {
+    float: right;
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgb(102, 102, 102);
+}
+
+a {
+    text-decoration: none;
+    color: #656565;
+}
+
+.banner>ul,
+p {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+
+/*topBar*/
+
+.topBar {
+    height: 30px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 30px;
+}
+
+.collection {
+    background: url('../images/YellowStar.png') left center no-repeat;
+    padding-left: 18px;
+    font-weight: bold;
+}
+
+.topBar a:hover {
+    color: red;
+}
+
+
+/*logoBar*/
+
+input {
+    border: none;
+}
+
+.logoBar {
+    height: 85px;
+    /*width: 1600px;*/
+    background-color: #1d7ad9;
+}
+
+
+/*logo*/
+
+.logo {
+    padding-left: 39px;
+    padding-top: 13px;
+    float: left;
+}
+
+
+/*search*/
+
+.search_box {
+    float: left;
+    margin-left: 185px;
+    margin-top: 23px;
+    width: 429px;
+    height: 35px;
+}
+
+.search_text {
+    float: left;
+    width: 350px;
+    height: 35px;
+    padding: 0 5px;
+}
+
+.search_button {
+    float: right;
+    width: 69px;
+    height: 35px;
+    background-color: #ff9900;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(255, 255, 255);
+}
+
+
+/*shopCar*/
+
+.shopCar {
+    float: right;
+    background-color: #ff9900;
+    width: 145px;
+    height: 35px;
+    margin-top: 23px;
+    margin-right: 22px;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(255, 255, 255);
+}
+
+.shopText {
+    float: left;
+    /*display: block;*/
+    width: 47px;
+    height: 23px;
+    background: url('../images/shopcarlogo.png') 10px 7px no-repeat;
+    padding-left: 40px;
+    padding-top: 12px;
+    border-right: 1px solid #e27a00;
+}
+
+.Num {
+    float: right;
+    /*display: block;*/
+    width: 27px;
+    height: 25px;
+    border-left: 1px solid #ff9c01;
+    background: url('../images/arr.png') 30px 12px no-repeat;
+    padding-right: 29px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+
+/*navBox*/
+
+.navBox {
+    height: 35px;
+    background-color: #0066cc;
+}
+
+.shopClass {
+    float: left;
+    width: 190px;
+    /*padding-left: 39px;*/
+    background: url('../images/littilearr.png') 159px 14px no-repeat;
+}
+
+.shopClass h3 {
+    line-height: 35px;
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.nav {
+    float: left;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.navBox ul li {
+    float: left;
+    list-style: none;
+    /*margin: 0 33px;*/
+}
+
+.navBox ul li a {
+    display: inline-block;
+    line-height: 35px;
+    width: 100px;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.navBox ul li a.active {
+    background-color: #3399ff;
+}
+
+
+/*shopClass_show*/
+
+.shopClass_show {
+    text-align: left;
+    background-color: #4593fd;
+    padding: 14px 0;
+    border-bottom: 1px solid #3487f2;
+    border-bottom: 1px solid #5aa1fe;
+}
+
+.shopClass_show dt {
+    padding-left: 6px;
+    background: url('../images/downarr.png') 175px center no-repeat;
+}
+
+.shopClass_show dt a {
+    padding-left: 5px;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(255, 255, 255);
+    line-height: 1.286;
+}
+
+.shopClass_show dt a.active {
+    display: inline-block;
+    height: 18px;
+    width: 46px;
+    margin-left: 10px;
+    background: url('../images/background.png') left top no-repeat;
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    line-height: 1.5;
+}
+
+.shopClass_show dd {
+    padding-left: 5px;
+}
+
+.shopClass_show dd a {
+    padding-left: 6px;
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgb(194, 217, 248);
+    line-height: 1.2;
+}
+
+
+/*banner*/
+
+.banner {
+    width: 810px;
+    height: 322px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.banner ul {
+    /*width: 811px;
+	height: 322px;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    list-style: none;
+}
+
+.banner ul li {
+    float: left;
+}
+
+.banner ul li a img {
+    height: 322px;
+    width: 811px;
+    display: block;
+}
+
+.bannerlink {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center
+}
+
+.bannerlink a {
+    width: 20px;
+    height: 5px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.bannerlink a.active {
+    background-color: #ff6600;
+    margin: 0 0;
+}
+
+
+/*showpic*/
+
+.showpic {
+    clear: both;
+    width: 1000px;
+    height: 475px;
+}
+
+
+/*showpic_top*/
+
+.showpic_top {
+    height: 45px;
+    width: 1000px;
+    /*display: inline-block;*/
+    padding: 15px 0;
+}
+
+
+/*showpic_top content*/
+
+.showpic_top img {
+    height: 45px;
+    width: 44px;
+    float: left;
+}
+
+.showpic_top span {
+    /*height: 23px;
+			width: 96px;*/
+    text-align: left;
+    line-height: 23px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 24px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(0, 0, 0);
+}
+
+.showpic_top p {
+    text-align: center;
+    line-height: 12px;
+    float: right;
+    margin-right: 2px;
+    margin-top: 18px;
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb(0, 0, 0);
+}
+
+.showpic_body {
+    height: 400px;
+    /*background-color: peachpuff;*/
+}
+
+
+/*body_left*/
+
+.showpic_body_left {
+    float: left;
+    width: 190px;
+    height: 400px;
+    background-color: #006699;
+}
+
+
+/*body_right*/
+
+.showpic_body_right {
+    float: right;
+    width: 810px;
+    height: 400px;
+    /*background-color:yellow;*/
+}
+
+
+/*right-row*/
+
+.showpic_body_right_row {
+    float: left;
+    width: 201px;
+    height: 400px;
+    /*background-color: #4593fd;*/
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+
+/*row_top*/
+
+.row_top {
+    width: 100%;
+    height: 280px;
+    /*background-color: #e27a00;*/
+    text-align: center;
+    font-family: "MicrosoftYaHei";
+    line-height: 1.5;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/*img */
+
+.row_top img {
+    display: block;
+    padding: 46px 32px 24px 32px;
+    /*text-align: center;*/
+    /*line-height: 151px;*/
+}
+
+
+/*row_top p*/
+
+.row_top span {
+    color: #ff6600;
+    font-size: 14px;
+}
+
+.row_top p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+/*row_down*/
+
+.row_down {
+    width: 100%;
+    height: 115px;
+    /*background-color: #656565;*/
+    border-bottom: 3px solid #ff6600;
+}
+
+
+/*down_left*/
+
+.down_left {
+    float: left;
+    height: 100%;
+    width: 50%;
+    /*background-color: #1d7ad9;*/
+    text-align: center;
+    line-height: 118px;
+}
+
+.down_left img {
+    vertical-align: middle;
+}
+
+
+/*down_right*/
+
+.down_right {
+    float: right;
+    height: 100%;
+    width: 100px;
+    /*background-color: #e27a00;*/
+    /*line-height: 100%;*/
+}
+
+.down_right p {
+    display: inline-block;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 10%;
+    left: 1%;
+    /*padding-top: 20px;*/
+    /*padding-left: 18px;*/
+    text-align: left;
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb(24, 24, 24);
+    line-height: 1.5;
+}
+
+.down_right span {
+    display: inline-block;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(24, 24, 24);
+    /*line-height: 1.125;*/
+}
+
+.down_right p.active {
+    color: #ff7300;
+}
+
+
+/*footer*/
+
+.footer {
+    height: 233px;
+    background-color: #cccccc;
+    margin-top: 40px;
+    margin-bottom: 7px;
+}
+
+.footer_top {
+    padding-top: 56px;
+    text-align: center;
+    list-style: none;
+
+}
+.footer_top li{
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb(0, 0, 0);
+    display: inline;
+}
+
+.footer_bottom{
+    list-style: none;
+    text-align: center;
+}
+.footer_bottom li{
+    display: inline;
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb(0, 0, 0);
+}
+
+.footer_img{
+    text-align: center;
+    list-style: none;
+}
+.footer_img li{
+    display: inline;
+}
