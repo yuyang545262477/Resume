@@ -1,0 +1,64 @@
+/*整体框架*/
+div,h1{
+    width: 800px;
+    margin: 0 auto;
+   
+}
+.img{
+     border: 1px dotted #0088bb;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/*标题*/
+h1{
+    font-size: 1.5em;
+    color: #0088bb;
+    line-height: 1.7;
+    font-weight: bold;
+}
+/*副标题*/
+.img>h3{
+    line-height: 1.7;
+    border-bottom: 2px solid  #0088bb;
+    margin-bottom: 10px;
+}
+.img>ul{
+    list-style: none;
+}
+.img>ul>li{
+    display: inline;
+    padding: 10px;
+}
+.img>ul>li>img{
+    width: 230px;
+    height: 230px;
+    border: none;
+}
+
+/*侧边栏目*/
+#menu>ul>li>a.active{
+            color: #fff;
+            background: #0088bb;
+}
+#menu>ul>li>a:hover{
+    background-color: aqua;
+}
+#menu>ul>li>a{
+    display: block;
+    width: 80px;
+    line-height: 2;
+    text-decoration: none;
+    color: black;
+    background-color: antiquewhite;
+    text-align: center;
+}
+#menu>ul>li{
+    list-style: none;
+}
+#menu {
+	position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: 420px;
+}
+
