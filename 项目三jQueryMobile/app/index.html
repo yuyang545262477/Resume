@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="one webapp for trainlist">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>package</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/jquery-mobile/css/themes/default/jquery.mobile.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div data-role="page" id="index">
+<!--       头部-->
+        <div data-role="header" data-position="fixed">
+            <h1>列车时刻查询表</h1>
+        </div>
+
+<!--        身体-->
+        <div role="main" class="ui-content">
+
+                <div class="ui-field-contain">
+                    <label for="search-begin">起点站:</label>
+                    <input type="text" id="search-begin" placeholder="例如'北京'">
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="search-end">终点站:</label>
+                    <input type="text" id="search-end" placeholder="例如'重庆'">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="search-no">车次:</label>
+                    <input type="text" id="search-no" placeholder="可单独填写此项目,例如'G1'" >
+                </div>
+
+            <input type="button" value="搜索" id="search-submit">
+            <ul data-role="listview" data-inset="true" id="list">
+            </ul>
+        </div>
+<!--        脚部-->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="http://www.baidu.com" data-icon="bars">百度</a></li>
+                    <li><a href="http://www.163.com" data-icon="gear">网易</a></li>
+                    <li><a href="#index2" data-icon="grid">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="index2">
+        <div data-role="header" data-position="fixed">
+            <h1>我们是第二页</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <table data-role="table" class="ui-responsive table-stroke" data-mode="reflow">
+                <thead>
+                    <tr>
+                        <th>第一列</th>
+                        <th>第二列</th>
+                        <th>第三列</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>02</td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#index" data-icon="camera">前一页</a></li>
+                    <li><a href="#" data-icon="alert">警告</a></li>
+                    <li><a href="#" data-icon="clock">闹钟</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+-->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+
+</html>
