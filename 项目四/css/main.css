@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body {
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+
+/*顶部区样式*/
+
+.nav {
+    background: url("../images/top_bg.jpg") repeat-x;
+    height: 27px;
+}
+
+.nav ul {
+    list-style: none;
+    float: right;
+}
+
+.nav ul li {
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    width: 80px;
+    text-align: center;
+    background: url('../images/arrow.jpg') no-repeat left center;
+}
+
+
+/*内容区*/
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/*logo区*/
+
+.con-log {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.con-log>img {
+    float: left;
+    width: 200px;
+    height: 80px;
+}
+
+.con-log>.nav-foot-right {
+    float: right;
+    height: 80px;
+    line-height: 80px;
+    background: url('../images/tel.jpg') no-repeat left center;
+    padding-left: 40px;
+}
+
+.con-log>.nav-foot-right>span {
+    font-size: 22px;
+    color: red;
+    font-family: serif;
+    padding-right: 10px;
+}
+
+
+/*导航栏*/
+
+.con-nav {
+    width: 100%;
+    height: 40px;
+    background: url('../images/nav_bg.jpg') repeat-x;
+    margin-bottom: 5px;
+}
+
+.con-nav>.con-nav-left {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+}
+
+.con-nav>.con-nav-left>li {
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.con-nav>.con-nav-right {
+    float: right;
+    width: 230px;
+    height: 30px;
+    line-height: 0px;
+    /*    overflow: hidden;*/
+    vertical-align: middle;
+    border: none;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-indent: 5px;
+    font-size: 20px;
+    background: url('../images/search.jpg') no-repeat right center;
+    background-color: white;
+}
+
+
+/*图片轮播区*/
+
+/*内容展示区*/
+
+.con-contents {
+    margin-top: 10px;
+    width: 100%;
+    height: 252px;
+}
+
+.con-cont-left,
+.con-cont-mid,
+.con-cont-right {
+    float: left;
+    /*    margin: 2px;*/
+}
+
+
+/*内容展示区的左边*/
+
+.con-cont-left {
+    width: 34.2%;
+    height: 100%;
+    border: 1px solid #e8e8e8;
+}
+
+
+/*第一个div*/
+
+.buttom-top {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.buttom-top>span:first-of-type {
+    float: left;
+    padding-left: 20px;
+}
+
+.buttom-top>span:last-of-type {
+    float: right;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+/*第二个div*/
+
+.con-cont-left>div:nth-child(2) {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.con-cont-left>div:nth-child(2)>div:first-of-type {
+    float: left;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/*第二个div的左侧图片*/
+
+.con-cont-left>div:nth-child(2)>div:first-of-type>img {
+    width: 113px;
+    height: 77px;
+}
+
+
+/*第二个div的右侧文字*/
+
+.con-cont-left>div:nth-child(2)>div:last-of-type {
+    float: left;
+    height: 100%;
+    width: 60%;
+    line-height: 1.7;
+}
+
+.con-cont-left>div:nth-child(2)>div:last-of-type>span>a {
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+}
+
+
+/*第三个div*/
+
+.con-cont-left>div:nth-child(3) {
+    margin-top: 20px;
+    /*	height: 100px;*/
+    width: 100%;
+}
+
+.con-cont-left>div:nth-child(3)>ul>li {
+    padding-left: 8px;
+    background: url("../images/list.jpg") no-repeat 5px center;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px dotted #e8e8e8;
+}
+
+.con-cont-left>div:nth-child(3)>ul>li>span {
+    float: right;
+}
+
+.con-cont-mid {
+    width: 412px;
+    height: 100%;
+    margin: 0 2px;
+    border: 1px solid #e8e8e8;
+}
+
+.con-cont-mid>#buttom-mid {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.con-cont-mid> #buttom-mid> img {
+    display: block;
+    width: 158px;
+    height: 105px;
+    margin: 0 5px;
+    float: left;
+}
+
+.con-cont-mid> #buttom-mid> h2>a {
+    display: block;
+    width: auto;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    color: red;
+}
+
+.con-cont-mid> #buttom-mid> p {
+    width: 100%;
+    height: 84px;
+    line-height: 1.7;
+}
+
+.con-cont-mid > #buttom-foot {
+    height: 30%;
+    width: 412px;
+    /*    padding: 20px 19px;;*/
+    position: relative;
+}
+
+.con-cont-mid > #buttom-foot > ul {
+    list-style: none;
+    text-align: center;
+    background: url('../images/product_type_bg.jpg') repeat-x;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+}
+
+.con-cont-mid > #buttom-foot > ul>li {
+    border: none;
+    margin: 0;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.con-cont-right {
+    min-width: 230px;
+    height: 100%;
+    border: 1px solid #e8e8e8;
+}
+
+.video {
+    width: ;
+    height: 140px;
+}
+
+.con-cont-right #foot {
+    height: 55px;
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+
+#foot>img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*底部版权去*/
+
+.footer {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background: #e8e8e8;
+}
+
+.footer>ul {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 1000px;
+}
+
+.footer>ul>li {
+    display: inline-block;
+    width: 195px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #999;
+    background: url('../images/line.png') right center no-repeat;
+}
+
+.footer>ul>li:nth-child(1):before {
+    background: url('../images/line.png');
+}
+
+.footer>ul>li>ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.footer>ul>li>div>p {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 8px;
+    background: url('../images/weixin.png') 31px center no-repeat;
+}
+#slider {
+    height: 310px;
+    width: 100%;
+    overflow: hidden;
+}
